@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
+}
+
+header{
+    background-color: #8cacd6;
+    padding: 16px;
+    color: rgb(67, 77, 88);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+form {
+    background-color: #b9d1eb;
+    padding: 24px 0;
+    text-align: center;
+}
+
+form input,
+button{
+    padding: 3px;
+}
+
+form ul li{
+    margin-bottom: 6px;
+}
+
+.feito{
+    text-decoration: line-through;
+    color: grey;
+}

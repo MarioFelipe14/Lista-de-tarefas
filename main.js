@@ -5,15 +5,13 @@ $(document).ready(function(){
     $('form').on('submit', function(e){
         e.preventDefault(); 
         let tarefa = $('input').val()
-        if(tarefa){
             let lista = $(".lista")
             let item = `<li>${tarefa}</li>`
-            lista.append(item)
+            $(item).appendTo(lista)
             $('input').val('')
-        }
     });
 
-    $('li').click(function() {
-        $(this).addClass('.feito');
+    $(document).on('click', 'li', function() {
+        $(this).toggleClass('feito');
     });
 });
